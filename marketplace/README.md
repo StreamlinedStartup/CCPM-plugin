@@ -38,17 +38,28 @@ Install directly from the repository:
 ```json
 {
   "name": "streamlinedstartup",
-  "displayName": "StreamlinedStartup CCPM Marketplace",
+  "owner": {
+    "name": "StreamlinedStartup",
+    "email": "contact@streamlinedstartup.com"
+  },
+  "metadata": {
+    "description": "Claude Code Project Management plugin marketplace",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "ccpm",
-      "displayName": "Claude Code PM",
       "version": "2.0.0",
-      "installUrl": "https://github.com/StreamlinedStartup/CCPM-plugin.git"
+      "source": {
+        "source": "github",
+        "repo": "StreamlinedStartup/CCPM-plugin"
+      }
     }
   ]
 }
 ```
+
+Schema follows [Claude Code marketplace specification](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces).
 
 ## Updating the Marketplace
 

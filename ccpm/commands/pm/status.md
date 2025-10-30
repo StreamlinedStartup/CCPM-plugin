@@ -1,6 +1,6 @@
 ---
-allowed-tools: Bash(bash ccpm/scripts/pm/status.sh)
+allowed-tools: Bash(bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/status.sh)
 ---
 
 Output:
-!bash ccpm/scripts/pm/status.sh
+!bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/status.sh

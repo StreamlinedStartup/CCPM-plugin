@@ -1,6 +1,6 @@
 ---
-allowed-tools: Bash(bash ccpm/scripts/pm/help.sh)
+allowed-tools: Bash(bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/help.sh)
 ---
 
 Output:
-!bash ccpm/scripts/pm/help.sh
+!bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/help.sh

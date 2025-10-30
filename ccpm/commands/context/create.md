@@ -9,7 +9,7 @@ This command creates the initial project context documentation in `.claude/conte
 ## Required Rules
 
 **IMPORTANT:** Before executing this command, read and follow:
-- `.claude/rules/datetime.md` - For getting real current date/time
+- `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/datetime.md` - For getting real current date/time
 
 ## Preflight Checklist
 

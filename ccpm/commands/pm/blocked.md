@@ -1,6 +1,6 @@
 ---
-allowed-tools: Bash(bash ccpm/scripts/pm/blocked.sh)
+allowed-tools: Bash(bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/blocked.sh)
 ---
 
 Output:
-!bash ccpm/scripts/pm/blocked.sh
+!bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/blocked.sh

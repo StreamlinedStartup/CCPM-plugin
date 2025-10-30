@@ -27,7 +27,7 @@ If no tasks found: "❌ No tasks to sync. Run: /pm:epic-decompose $ARGUMENTS"
 
 ### 0. Check Remote Repository
 
-Follow `/rules/github-operations.md` to ensure we're not syncing to the CCPM template:
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/github-operations.md` to ensure we're not syncing to the CCPM template:
 
 ```bash
 # Check if remote origin is the CCPM template repository
@@ -421,7 +421,7 @@ echo "Synced: $(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> .claude/epics/$ARGUMENTS/gith
 
 ### 7. Create Worktree
 
-Follow `/rules/worktree-operations.md` to create development worktree:
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/worktree-operations.md` to create development worktree:
 
 ```bash
 # Ensure main is current
@@ -453,7 +453,7 @@ Next steps:
 
 ## Error Handling
 
-Follow `/rules/github-operations.md` for GitHub CLI errors.
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/github-operations.md` for GitHub CLI errors.
 
 If any issue creation fails:
 - Report what succeeded

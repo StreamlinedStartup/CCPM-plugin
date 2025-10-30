@@ -14,7 +14,7 @@ Push local updates as GitHub issue comments for transparent audit trail.
 ## Required Rules
 
 **IMPORTANT:** Before executing this command, read and follow:
-- `.claude/rules/datetime.md` - For getting real current date/time
+- `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/datetime.md` - For getting real current date/time
 
 ## Preflight Checklist
 
@@ -22,7 +22,7 @@ Before proceeding, complete these validation steps.
 Do not bother the user with preflight checks progress ("I'm not going to ..."). Just do them and move on.
 
 0. **Repository Protection Check:**
-   Follow `/rules/github-operations.md` - check remote origin:
+   Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/github-operations.md` - check remote origin:
    ```bash
    remote_url=$(git remote get-url origin 2>/dev/null || echo "")
    if [[ "$remote_url" == *"automazeio/ccpm"* ]]; then

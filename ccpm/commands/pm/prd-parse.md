@@ -14,7 +14,7 @@ Convert PRD to technical implementation epic.
 ## Required Rules
 
 **IMPORTANT:** Before executing this command, read and follow:
-- `.claude/rules/datetime.md` - For getting real current date/time
+- `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/datetime.md` - For getting real current date/time
 
 ## Preflight Checklist
 

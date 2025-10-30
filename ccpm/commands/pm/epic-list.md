@@ -1,7 +1,7 @@
 ---
-allowed-tools: Bash(bash ccpm/scripts/pm/epic-list.sh)
+allowed-tools: Bash(bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/epic-list.sh)
 ---
 
 Output:
-!bash ccpm/scripts/pm/epic-list.sh
+!bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/epic-list.sh
 

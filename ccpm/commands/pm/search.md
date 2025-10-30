@@ -1,6 +1,6 @@
 ---
-allowed-tools: Bash(bash ccpm/scripts/pm/search.sh $ARGUMENTS)
+allowed-tools: Bash(bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/search.sh $ARGUMENTS)
 ---
 
 Output:
-!bash ccpm/scripts/pm/search.sh $ARGUMENTS
+!bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/search.sh $ARGUMENTS

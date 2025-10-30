@@ -73,4 +73,4 @@ Synced to GitHub: ✅
 
 Always update local first, then GitHub.
 Preserve frontmatter fields not being edited.
-Follow `/rules/frontmatter-operations.md`.
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/frontmatter-operations.md`.

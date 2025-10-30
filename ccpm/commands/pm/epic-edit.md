@@ -63,4 +63,4 @@ View epic: /pm:epic-show $ARGUMENTS
 
 Preserve frontmatter history (created, github URL, etc.).
 Don't change task files when editing epic.
-Follow `/rules/frontmatter-operations.md`.
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/frontmatter-operations.md`.

@@ -77,6 +77,6 @@ Status:
 
 ## Important Notes
 
-Follow `/rules/github-operations.md` for GitHub commands.
-Follow `/rules/frontmatter-operations.md` for local updates.
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/github-operations.md` for GitHub commands.
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/frontmatter-operations.md` for local updates.
 Always backup before sync in case of issues.

@@ -1,5 +1,66 @@
 # CCPM Changelog
 
+## [2.0.0] - Plugin Architecture Release
+
+### 🎯 Overview
+**Major architectural upgrade**: CCPM is now a Claude Code Plugin! This release transforms CCPM from a template system into a modern plugin that installs once and works across all projects. Includes automatic migration tooling and backwards compatibility.
+
+### 🚀 Breaking Changes
+- **Plugin Architecture**: System now distributed as Claude Code Plugin instead of copied template
+- **Installation Method**: Changed from `curl | bash` to `/plugin install ccpm@automazeio`
+- **File Organization**: Commands, agents, rules, scripts now in plugin; only user data (PRDs, epics, context) in project
+
+### ✨ Added
+- **`.claude-plugin/plugin.json`**: Plugin manifest with metadata and configuration
+- **Plugin Path References**: All internal paths use `${CLAUDE_PLUGIN_ROOT}` variable
+- **`/migrate-from-template` command**: Automated migration from v1.x template to v2.0 plugin
+- **Migration script** (`scripts/migrate-to-plugin.sh`): Standalone migration utility
+- **Self-hosted marketplace** (`marketplace/marketplace.json`): Plugin distribution infrastructure
+- **MIGRATION.md**: Comprehensive migration guide for existing users
+- **Plugin installation docs**: Updated README with plugin-first installation
+
+### 🔄 Changed
+- **Command references**: Updated 14 PM commands to use `${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/...`
+- **Rule references**: Updated 20+ files to use `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/...`
+- **Agent references**: Updated test-runner agent to use plugin paths
+- **Init command**: Modified to create project directories instead of copying template files
+- **README.md**: Prioritizes plugin installation, moves manual installation to advanced section
+- **CLAUDE.md**: Updated to reflect plugin architecture
+- **Repository structure**: Kept `ccpm/` directory for plugin contents
+
+### 🛠️ Migration Path
+**For existing users (v1.x template)**:
+1. Run `/migrate-from-template` in your project
+2. Or manually remove `.claude/{commands,agents,rules,scripts}`
+3. Keep `.claude/{prds,epics,context}` (your data)
+4. Install plugin: `/plugin install ccpm@automazeio`
+
+**For new users**:
+1. Install plugin: `/plugin install ccpm@automazeio`
+2. Initialize project: `/pm:init`
+3. Create context: `/context:create`
+
+### 📦 Benefits
+- ✅ Single installation for all projects
+- ✅ Easy updates via `/plugin update ccpm`
+- ✅ Cleaner project structure
+- ✅ Version management with rollback
+- ✅ Marketplace distribution
+
+### 🔧 Technical Details
+- Plugin paths use `${CLAUDE_PLUGIN_ROOT}` environment variable
+- User data remains in project's `.claude/` directory
+- Commands, agents, rules, scripts provided by global plugin installation
+- Backwards compatible: Manual installation still supported
+
+### 📚 Documentation
+- Added `MIGRATION.md` - Complete migration guide
+- Added `marketplace/README.md` - Marketplace setup guide
+- Updated main `README.md` - Plugin-first approach
+- Updated `CLAUDE.md` - Plugin architecture details
+
+---
+
 ## [2025-01-24] - Major Cleanup & Issue Resolution Release
 
 ### 🎯 Overview

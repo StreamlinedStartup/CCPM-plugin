@@ -384,49 +384,72 @@ Teams using this system report:
 
 ## Get Started Now
 
-### Quick Setup (2 minutes)
+### Quick Setup (30 seconds)
 
-1. **Install this repository into your project**:
+**New in v2.0**: CCPM is now a Claude Code Plugin! Install once, use everywhere.
 
-   #### Unix/Linux/macOS
-
+1. **Install the plugin**:
    ```bash
-   cd path/to/your/project/
-   curl -sSL https://automaze.io/ccpm/install | bash
-   # or: wget -qO- https://automaze.io/ccpm/install | bash
+   /plugin install ccpm@automazeio
    ```
 
-   #### Windows (PowerShell)
+   Or install directly from GitHub:
    ```bash
-   cd path/to/your/project/
-   iwr -useb https://automaze.io/ccpm/install | iex
+   /plugin install https://github.com/automazeio/ccpm.git
    ```
-   > ⚠️ **IMPORTANT**: If you already have a `.claude` directory, clone this repository to a different directory and copy the contents of the cloned `.claude` directory to your project's `.claude` directory.
 
-   See full/other installation options in the [installation guide ›](https://github.com/automazeio/ccpm/tree/main/install)
-
-
-2. **Initialize the PM system**:
+2. **Initialize your project**:
    ```bash
    /pm:init
    ```
    This command will:
    - Install GitHub CLI (if needed)
    - Authenticate with GitHub
-   - Install [gh-sub-issue extension](https://github.com/yahsan2/gh-sub-issue) for proper parent-child relationships
-   - Create required directories
-   - Update .gitignore
+   - Install [gh-sub-issue extension](https://github.com/yahsan2/gh-sub-issue)
+   - Create project directories (prds, epics, context)
+   - Set up GitHub labels
 
-3. **Create `CLAUDE.md`** with your repository information
-   ```bash
-   /init include rules from .claude/CLAUDE.md
-   ```
-   > If you already have a `CLAUDE.md` file, run: `/re-init` to update it with important rules from `.claude/CLAUDE.md`.
-
-4. **Prime the system**:
+3. **Prime the system**:
    ```bash
    /context:create
    ```
+
+### Migrating from v1.x?
+
+If you're upgrading from the template installation:
+
+```bash
+/migrate-from-template
+```
+
+See the [Migration Guide](MIGRATION.md) for details.
+
+### Alternative: Manual Installation (Advanced)
+
+For air-gapped environments or heavy customization:
+
+<details>
+<summary>Click to expand manual installation instructions</summary>
+
+#### Unix/Linux/macOS
+
+```bash
+cd path/to/your/project/
+curl -sSL https://automaze.io/ccpm/install | bash
+# or: wget -qO- https://automaze.io/ccpm/install | bash
+```
+
+#### Windows (PowerShell)
+```bash
+cd path/to/your/project/
+iwr -useb https://automaze.io/ccpm/install | iex
+```
+
+> ⚠️ **Note**: Manual installation copies all files into your project. Plugin installation is recommended for easier updates.
+
+See full installation options in the [installation guide ›](https://github.com/automazeio/ccpm/tree/main/install)
+
+</details>
 
 
 

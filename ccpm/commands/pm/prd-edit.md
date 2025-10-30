@@ -62,4 +62,4 @@ Next: /pm:prd-parse $ARGUMENTS to update epic
 
 Preserve original creation date.
 Keep version history in frontmatter if needed.
-Follow `/rules/frontmatter-operations.md`.
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/frontmatter-operations.md`.

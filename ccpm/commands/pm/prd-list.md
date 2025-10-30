@@ -1,6 +1,6 @@
 ---
-allowed-tools: Bash(bash ccpm/scripts/pm/prd-list.sh)
+allowed-tools: Bash(bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/prd-list.sh)
 ---
 
 Output:
-!bash ccpm/scripts/pm/prd-list.sh
+!bash ${CLAUDE_PLUGIN_ROOT}/ccpm/scripts/pm/prd-list.sh

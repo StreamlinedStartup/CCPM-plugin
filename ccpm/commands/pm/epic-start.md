@@ -37,7 +37,7 @@ Launch parallel agents to work on epic tasks in a shared branch.
 
 ### 1. Create or Enter Branch
 
-Follow `/rules/branch-operations.md`:
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/branch-operations.md`:
 
 ```bash
 # Check for uncommitted changes
@@ -117,7 +117,7 @@ Task:
     - .claude/epics/$ARGUMENTS/{task_file}
     - .claude/epics/$ARGUMENTS/{issue}-analysis.md
 
-    Follow coordination rules in /rules/agent-coordination.md
+    Follow coordination rules in ${CLAUDE_PLUGIN_ROOT}/ccpm/rules/agent-coordination.md
 
     Commit frequently with message format:
     "Issue #{issue}: {specific change}"
@@ -240,8 +240,8 @@ Or: Check existing branches with: git branch -a
 
 ## Important Notes
 
-- Follow `/rules/branch-operations.md` for git operations
-- Follow `/rules/agent-coordination.md` for parallel work
+- Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/branch-operations.md` for git operations
+- Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/agent-coordination.md` for parallel work
 - Agents work in the SAME branch (not separate branches)
 - Maximum parallel agents should be reasonable (e.g., 5-10)
 - Monitor system resources if launching many agents

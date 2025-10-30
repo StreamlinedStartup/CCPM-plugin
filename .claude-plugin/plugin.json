@@ -1,0 +1,28 @@
+{
+  "name": "ccpm",
+  "version": "2.0.0",
+  "description": "Claude Code workflow to ship better using spec-driven development, GitHub issues, Git worktrees, and multiple AI agents running in parallel",
+  "author": {
+    "name": "Automaze",
+    "url": "https://automaze.io"
+  },
+  "homepage": "https://github.com/automazeio/ccpm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/automazeio/ccpm"
+  },
+  "license": "MIT",
+  "keywords": [
+    "project-management",
+    "github",
+    "workflow",
+    "parallel-execution",
+    "spec-driven",
+    "prd",
+    "epic",
+    "worktree",
+    "agents"
+  ],
+  "commands": "./ccpm/commands",
+  "agents": "./ccpm/agents"
+}

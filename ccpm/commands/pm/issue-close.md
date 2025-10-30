@@ -97,6 +97,6 @@ Next: Run /pm:next for next priority task
 
 ## Important Notes
 
-Follow `/rules/frontmatter-operations.md` for updates.
-Follow `/rules/github-operations.md` for GitHub commands.
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/frontmatter-operations.md` for updates.
+Follow `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/github-operations.md` for GitHub commands.
 Always sync local state before GitHub.

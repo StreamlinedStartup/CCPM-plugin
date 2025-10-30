@@ -1,0 +1,37 @@
+{
+  "name": "automazeio",
+  "displayName": "Automaze CCPM Marketplace",
+  "description": "Official marketplace for Claude Code Project Management (CCPM) plugin",
+  "url": "https://github.com/automazeio/ccpm",
+  "plugins": [
+    {
+      "name": "ccpm",
+      "displayName": "Claude Code PM",
+      "description": "Spec-driven development workflow with PRDs, epics, GitHub issues, Git worktrees, and parallel AI agents",
+      "version": "2.0.0",
+      "author": {
+        "name": "Automaze",
+        "url": "https://automaze.io"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/automazeio/ccpm"
+      },
+      "homepage": "https://github.com/automazeio/ccpm",
+      "license": "MIT",
+      "keywords": [
+        "project-management",
+        "github",
+        "workflow",
+        "parallel-execution",
+        "spec-driven",
+        "prd",
+        "epic",
+        "worktree",
+        "agents"
+      ],
+      "installUrl": "https://github.com/automazeio/ccpm.git",
+      "minClaudeCodeVersion": "1.0.0"
+    }
+  ]
+}

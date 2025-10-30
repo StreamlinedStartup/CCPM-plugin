@@ -9,7 +9,7 @@ This command updates the project context documentation in `.claude/context/` to 
 ## Required Rules
 
 **IMPORTANT:** Before executing this command, read and follow:
-- `.claude/rules/datetime.md` - For getting real current date/time
+- `${CLAUDE_PLUGIN_ROOT}/ccpm/rules/datetime.md` - For getting real current date/time
 
 ## Preflight Checklist
 

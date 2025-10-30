@@ -63,24 +63,14 @@ else
   gh extension install yahsan2/gh-sub-issue
 fi
 
-# Create directory structure
+# Create directory structure for user data
 echo ""
 echo "📁 Creating directory structure..."
 mkdir -p .claude/prds
 mkdir -p .claude/epics
-mkdir -p .claude/rules
-mkdir -p .claude/agents
-mkdir -p .claude/scripts/pm
-echo "  ✅ Directories created"
-
-# Copy scripts if in main repo
-if [ -d "scripts/pm" ] && [ ! "$(pwd)" = *"/.claude"* ]; then
-  echo ""
-  echo "📝 Copying PM scripts..."
-  cp -r scripts/pm/* .claude/scripts/pm/
-  chmod +x .claude/scripts/pm/*.sh
-  echo "  ✅ Scripts copied and made executable"
-fi
+mkdir -p .claude/context
+echo "  ✅ Directories created (prds, epics, context)"
+echo "  ℹ️ Commands, agents, and scripts are provided by the plugin"
 
 # Check for git
 echo ""
@@ -183,10 +173,11 @@ echo "  Extensions: $(gh extension list | wc -l) installed"
 echo "  Auth: $(gh auth status 2>&1 | grep -o 'Logged in to [^ ]*' || echo 'Not authenticated')"
 echo ""
 echo "🎯 Next Steps:"
-echo "  1. Create your first PRD: /pm:prd-new <feature-name>"
-echo "  2. View help: /pm:help"
-echo "  3. Check status: /pm:status"
+echo "  1. Prime the system: /context:create"
+echo "  2. Create your first PRD: /pm:prd-new <feature-name>"
+echo "  3. View help: /pm:help"
+echo "  4. Check status: /pm:status"
 echo ""
-echo "📚 Documentation: README.md"
+echo "📚 Documentation: https://github.com/automazeio/ccpm"
 
 exit 0

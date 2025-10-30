@@ -7,10 +7,7 @@
     "url": "https://github.com/StreamlinedStartup"
   },
   "homepage": "https://github.com/StreamlinedStartup/CCPM-plugin",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/StreamlinedStartup/CCPM-plugin"
-  },
+  "repository": "https://github.com/StreamlinedStartup/CCPM-plugin",
   "license": "MIT",
   "keywords": [
     "project-management",
@@ -24,5 +21,10 @@
     "agents"
   ],
   "commands": "./ccpm/commands",
-  "agents": "./ccpm/agents"
+  "agents": [
+    "./ccpm/agents/code-analyzer.md",
+    "./ccpm/agents/file-analyzer.md",
+    "./ccpm/agents/parallel-worker.md",
+    "./ccpm/agents/test-runner.md"
+  ]
 }

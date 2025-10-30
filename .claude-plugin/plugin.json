@@ -3,13 +3,13 @@
   "version": "2.0.0",
   "description": "Claude Code workflow to ship better using spec-driven development, GitHub issues, Git worktrees, and multiple AI agents running in parallel",
   "author": {
-    "name": "Automaze",
-    "url": "https://automaze.io"
+    "name": "StreamlinedStartup",
+    "url": "https://github.com/StreamlinedStartup"
   },
-  "homepage": "https://github.com/automazeio/ccpm",
+  "homepage": "https://github.com/StreamlinedStartup/CCPM-plugin",
   "repository": {
     "type": "git",
-    "url": "https://github.com/automazeio/ccpm"
+    "url": "https://github.com/StreamlinedStartup/CCPM-plugin"
   },
   "license": "MIT",
   "keywords": [

@@ -11,7 +11,7 @@ CCPM 2.0 introduces a plugin architecture that simplifies installation and updat
 - Updates required re-copying or manual merging
 
 ### After (Plugin Mode v2.0)
-- Run: `/plugin install ccpm@automazeio`
+- Run: `/plugin install ccpm@streamlinedstartup`
 - Plugin installed once, used across all projects
 - Only user data (PRDs, epics, context) stays in project
 - Updates via: `/plugin update ccpm`
@@ -68,13 +68,13 @@ rm .claude/settings.json.example
 ### Step 3: Install Plugin
 
 ```bash
-/plugin install ccpm@automazeio
+/plugin install ccpm@streamlinedstartup
 ```
 
 Or install directly from Git:
 
 ```bash
-/plugin install https://github.com/automazeio/ccpm.git
+/plugin install https://github.com/StreamlinedStartup/CCPM-plugin.git
 ```
 
 ### Step 4: Verify
@@ -138,7 +138,7 @@ For team-wide consistency, add the marketplace to your settings:
 
 Then install with:
 ```bash
-/plugin install ccpm@automazeio
+/plugin install ccpm@streamlinedstartup
 ```
 
 ## Troubleshooting
@@ -150,7 +150,7 @@ Then install with:
 /plugin list
 
 # Reinstall if needed
-/plugin install ccpm@automazeio
+/plugin install ccpm@streamlinedstartup
 ```
 
 ### Old Template Files Remain
@@ -178,7 +178,7 @@ cp -r .claude-backup/* .claude/
 
 # Reinstall with force
 /plugin uninstall ccpm
-/plugin install ccpm@automazeio
+/plugin install ccpm@streamlinedstartup
 ```
 
 ## Multiple Projects
@@ -188,7 +188,7 @@ You only need to install the plugin once. It will work across all your projects:
 ```bash
 # In project 1
 cd ~/projects/project1
-/plugin install ccpm@automazeio
+/plugin install ccpm@streamlinedstartup
 /pm:init
 
 # In project 2 - plugin already available!
@@ -207,7 +207,7 @@ If you need to rollback (not recommended):
 
 2. Reinstall template (v1.x):
    ```bash
-   git clone https://github.com/automazeio/ccpm.git
+   git clone https://github.com/StreamlinedStartup/CCPM-plugin.git
    cd ccpm
    git checkout v1.x  # Last template version
    cp -r ccpm/* .claude/
@@ -222,7 +222,7 @@ Your PRDs, epics, and context files are compatible between versions.
 
 ## Support
 
-- 📚 [Documentation](https://github.com/automazeio/ccpm)
-- 🐛 [Report Issues](https://github.com/automazeio/ccpm/issues)
-- 💬 [Discussions](https://github.com/automazeio/ccpm/discussions)
+- 📚 [Documentation](https://github.com/StreamlinedStartup/CCPM-plugin)
+- 🐛 [Report Issues](https://github.com/StreamlinedStartup/CCPM-plugin/issues)
+- 💬 [Discussions](https://github.com/StreamlinedStartup/CCPM-plugin/discussions)
 - 𝕏 [Follow @aroussi](https://x.com/aroussi)

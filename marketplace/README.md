@@ -12,8 +12,8 @@ Add this marketplace to your Claude Code settings file (`.claude/settings.json` 
 {
   "marketplaces": [
     {
-      "name": "automazeio",
-      "url": "https://raw.githubusercontent.com/automazeio/ccpm/main/marketplace/marketplace.json"
+      "name": "streamlinedstartup",
+      "url": "https://raw.githubusercontent.com/StreamlinedStartup/CCPM-plugin/main/marketplace/marketplace.json"
     }
   ]
 }
@@ -22,7 +22,7 @@ Add this marketplace to your Claude Code settings file (`.claude/settings.json` 
 Then install the plugin:
 
 ```bash
-/plugin install ccpm@automazeio
+/plugin install ccpm@streamlinedstartup
 ```
 
 ### Option 2: Direct Git Installation
@@ -30,21 +30,21 @@ Then install the plugin:
 Install directly from the repository:
 
 ```bash
-/plugin install https://github.com/automazeio/ccpm.git
+/plugin install https://github.com/StreamlinedStartup/CCPM-plugin.git
 ```
 
 ## Marketplace Structure
 
 ```json
 {
-  "name": "automazeio",
-  "displayName": "Automaze CCPM Marketplace",
+  "name": "streamlinedstartup",
+  "displayName": "StreamlinedStartup CCPM Marketplace",
   "plugins": [
     {
       "name": "ccpm",
       "displayName": "Claude Code PM",
       "version": "2.0.0",
-      "installUrl": "https://github.com/automazeio/ccpm.git"
+      "installUrl": "https://github.com/StreamlinedStartup/CCPM-plugin.git"
     }
   ]
 }

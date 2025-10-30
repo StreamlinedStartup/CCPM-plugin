@@ -1,8 +1,8 @@
 {
-  "name": "automazeio",
-  "displayName": "Automaze CCPM Marketplace",
-  "description": "Official marketplace for Claude Code Project Management (CCPM) plugin",
-  "url": "https://github.com/automazeio/ccpm",
+  "name": "streamlinedstartup",
+  "displayName": "StreamlinedStartup CCPM Marketplace",
+  "description": "Marketplace for Claude Code Project Management (CCPM) plugin",
+  "url": "https://github.com/StreamlinedStartup/CCPM-plugin",
   "plugins": [
     {
       "name": "ccpm",
@@ -10,14 +10,14 @@
       "description": "Spec-driven development workflow with PRDs, epics, GitHub issues, Git worktrees, and parallel AI agents",
       "version": "2.0.0",
       "author": {
-        "name": "Automaze",
-        "url": "https://automaze.io"
+        "name": "StreamlinedStartup",
+        "url": "https://github.com/StreamlinedStartup"
       },
       "repository": {
         "type": "git",
-        "url": "https://github.com/automazeio/ccpm"
+        "url": "https://github.com/StreamlinedStartup/CCPM-plugin"
       },
-      "homepage": "https://github.com/automazeio/ccpm",
+      "homepage": "https://github.com/StreamlinedStartup/CCPM-plugin",
       "license": "MIT",
       "keywords": [
         "project-management",
@@ -30,7 +30,7 @@
         "worktree",
         "agents"
       ],
-      "installUrl": "https://github.com/automazeio/ccpm.git",
+      "installUrl": "https://github.com/StreamlinedStartup/CCPM-plugin.git",
       "minClaudeCodeVersion": "1.0.0"
     }
   ]

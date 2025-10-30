@@ -2,16 +2,16 @@
 
 [![Automaze](https://img.shields.io/badge/By-automaze.io-4b3baf)](https://automaze.io)
 &nbsp;
-[![Claude Code](https://img.shields.io/badge/+-Claude%20Code-d97757)](https://github.com/automazeio/ccpm/blob/main/README.md)
-[![GitHub Issues](https://img.shields.io/badge/+-GitHub%20Issues-1f2328)](https://github.com/automazeio/ccpm)
+[![Claude Code](https://img.shields.io/badge/+-Claude%20Code-d97757)](https://github.com/StreamlinedStartup/CCPM-plugin/blob/main/README.md)
+[![GitHub Issues](https://img.shields.io/badge/+-GitHub%20Issues-1f2328)](https://github.com/StreamlinedStartup/CCPM-plugin)
 &nbsp;
 [![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code?tab=readme-ov-file#general-)
 &nbsp;
-[![MIT License](https://img.shields.io/badge/License-MIT-28a745)](https://github.com/automazeio/ccpm/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-28a745)](https://github.com/StreamlinedStartup/CCPM-plugin/blob/main/LICENSE)
 &nbsp;
 [![Follow on 𝕏](https://img.shields.io/badge/𝕏-@aroussi-1c9bf0)](http://x.com/intent/follow?screen_name=aroussi)
 &nbsp;
-[![Star this repo](https://img.shields.io/github/stars/automazeio/ccpm.svg?style=social&label=Star%20this%20repo&maxAge=60)](https://github.com/automazeio/ccpm)
+[![Star this repo](https://img.shields.io/github/stars/automazeio/ccpm.svg?style=social&label=Star%20this%20repo&maxAge=60)](https://github.com/StreamlinedStartup/CCPM-plugin)
 
 ### Claude Code workflow to ship ~~faster~~ _better_ using spec-driven development, GitHub issues, Git worktrees, and multiple AI agents running in parallel.
 
@@ -390,12 +390,12 @@ Teams using this system report:
 
 1. **Install the plugin**:
    ```bash
-   /plugin install ccpm@automazeio
+   /plugin install ccpm@streamlinedstartup
    ```
 
    Or install directly from GitHub:
    ```bash
-   /plugin install https://github.com/automazeio/ccpm.git
+   /plugin install https://github.com/StreamlinedStartup/CCPM-plugin.git
    ```
 
 2. **Initialize your project**:
@@ -447,7 +447,7 @@ iwr -useb https://automaze.io/ccpm/install | iex
 
 > ⚠️ **Note**: Manual installation copies all files into your project. Plugin installation is recommended for easier updates.
 
-See full installation options in the [installation guide ›](https://github.com/automazeio/ccpm/tree/main/install)
+See full installation options in the [installation guide ›](https://github.com/StreamlinedStartup/CCPM-plugin/tree/main/install)
 
 </details>
 
@@ -500,7 +500,7 @@ Claude Code PM was developed at [Automaze](https://automaze.io) **for developers
 
 If Claude Code PM helps your team ship better software:
 
-- ⭐ **[Star this repository](https://github.com/automazeio/ccpm)** to show your support
+- ⭐ **[Star this repository](https://github.com/StreamlinedStartup/CCPM-plugin)** to show your support
 - 🐦 **[Follow @aroussi on X](https://x.com/aroussi)** for updates and tips
 
 

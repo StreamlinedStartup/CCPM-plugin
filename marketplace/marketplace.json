@@ -1,23 +1,16 @@
 {
   "name": "streamlinedstartup",
-  "displayName": "StreamlinedStartup CCPM Marketplace",
   "description": "Marketplace for Claude Code Project Management (CCPM) plugin",
-  "url": "https://github.com/StreamlinedStartup/CCPM-plugin",
+  "owner": "StreamlinedStartup",
   "plugins": [
     {
       "name": "ccpm",
-      "displayName": "Claude Code PM",
       "description": "Spec-driven development workflow with PRDs, epics, GitHub issues, Git worktrees, and parallel AI agents",
       "version": "2.0.0",
-      "author": {
-        "name": "StreamlinedStartup",
-        "url": "https://github.com/StreamlinedStartup"
-      },
-      "repository": {
-        "type": "git",
-        "url": "https://github.com/StreamlinedStartup/CCPM-plugin"
-      },
+      "author": "StreamlinedStartup",
       "homepage": "https://github.com/StreamlinedStartup/CCPM-plugin",
+      "repository": "https://github.com/StreamlinedStartup/CCPM-plugin",
+      "source": "https://github.com/StreamlinedStartup/CCPM-plugin.git",
       "license": "MIT",
       "keywords": [
         "project-management",
@@ -29,9 +22,7 @@
         "epic",
         "worktree",
         "agents"
-      ],
-      "installUrl": "https://github.com/StreamlinedStartup/CCPM-plugin.git",
-      "minClaudeCodeVersion": "1.0.0"
+      ]
     }
   ]
 }
